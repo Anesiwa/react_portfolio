@@ -8,13 +8,13 @@ export const FooterContainer = styled.div`
   margin-bottom: 25px;
 `;
 
-export const LeftSection = styled.div`
+export const LeftSection = styled.span`
   height: 100%;
   width: 70px;
   padding: 25px;
 `;
 
-export const RightSection = styled.div`
+export const RightSection = styled.span`
   width: 70%;
   height: 100%;
   display: flex;

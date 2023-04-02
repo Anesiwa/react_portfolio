@@ -1,6 +1,6 @@
 export default function SocialMediaLinks() {
   return (
-    <div class="col-md-6 text-center">
+    <div className="col-md-6 text-center">
       <a href="mailto:lwvibed@gmail.com" title="Email Amelia Arku">
         Mail
       </a>
