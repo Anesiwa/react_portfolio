@@ -8,3 +8,24 @@
   --font-color: var(--light-branding-color);
   --tertiary-color: #61b390;
 }
+.appWrapper {
+  padding: 10px;
+}
+
+.social-icons {
+  text-decoration: none;
+  color: var(--background-color);
+  background: var(--branding-color);
+  padding: 12px 12px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: var(--background-color);
+  background: var(--tertiary-color);
+  transition: all 100mx ease-in-out;
+}

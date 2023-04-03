@@ -1,13 +1,15 @@
+import Hero from "../../components/Hero";
+import About from "../../components/About";
+import Work from "../../components/Work";
+import Contact from "../../components/Contact";
+
 export default function Home() {
   return (
     <div>
-      <div className="heroContainer">Hello from Header</div>
-      <div>
-        <section>
-          <div>Hello I'm Amelia Arku</div>
-          <div>Front-end Developer based in the U.S.A.</div>
-        </section>
-      </div>
+      <Hero />
+      <About />
+      <Work />
+      <Contact />
     </div>
   );
 }

@@ -65,11 +65,11 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: (var--tertiary-color);
 `;
 
 const Button = styled.button`
-  background-color: #da4ea2;
+  background-color: var(--background-color);
   color: white;
   font-weight: 500;
   width: 120px;

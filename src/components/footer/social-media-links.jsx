@@ -1,22 +1,31 @@
+import "./footer.styling.css";
+
 export default function SocialMediaLinks() {
   return (
-    <div className="col-md-6 text-center">
-      <a href="mailto:lwvibed@gmail.com" title="Email Amelia Arku">
-        Mail
+    <div className="footer-social-links">
+      <a
+        href="mailto:lwvibed@gmail.com"
+        title="Email Amelia Arku"
+        className="footer-social-icons"
+      >
+        <i className="fas fa-envelope"></i>
       </a>
       <a
-        href="https:/www.linkedincom/in/ameliaarku"
+        href="https:/www.linkedin.com/in/ameliaarku"
         title="Connect with Amelia Arku on LinkedIn"
+        target="_blank"
+        rel="noreferrer"
+        className="footer-social-icons"
       >
-        LinkedIn
+        <i className="fab fa-linkedin"></i>
       </a>
+
       <a
-        href="https://www.facebook.com/ameliaarku"
-        title="Connect with Amelia Arku on Facebook"
+        href="https://www.lifewellvibed.com"
+        title="Check out Amelia's personal Wordpress website"
+        rel="noreferrer"
+        className="footer-social-icons"
       >
-        Facebook
-      </a>
-      <a href="mailto:lwvibed@gmail.com" title="Email Amelia Arku">
         Life Well Vibed
       </a>
     </div>

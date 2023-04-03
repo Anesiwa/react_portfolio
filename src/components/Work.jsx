@@ -54,13 +54,13 @@ const ListItem = styled.li`
   font-size: 70px;
   font-weight: bold;
   cursor: pointer;
-  color: transparent;
+  color: var(--background-color);
   -webkit-text-stroke: 1px white;
   position: relative;
 
   @media only screen and (max-width: 768px) {
     font-size: 32px;
-    color: white;
+    color: var(--branding-color);
     -webkit-text-stroke: 0px;
   }
   ::after {
@@ -68,7 +68,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: var(--tertiary-color);
     width: 0px;
     overflow: hidden;
     white-space: nowrap;

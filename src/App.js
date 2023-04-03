@@ -1,10 +1,13 @@
 import "./App.css";
-import Footer from "./components/footer/footer.component";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Work from "./components/Work";
-import About from "./components/About";
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
+import Footer from "./components/footer/footer.component";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./routes/home/home";
+import Navigation from "./routes/navigation/navigation.NEW";
+import AboutPage from "./routes/about/about-page";
+import ContactPage from "./routes/contact/contact-page";
+import Portfolio from "./routes/portfolio/portfolio";
 
 const Container = styled.div`
   height: 100vh;
@@ -12,22 +15,26 @@ const Container = styled.div`
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
-  background: url("./img/background_2.png");
-  color: var(--light-branding-color);
+  background: var(--background-color);
+  color: var(--branding-color);
   &::-webkit-scrollbar {
     display: none;
   }
-  padding: 10px;
 `;
 
 export default function App() {
   return (
     <Container className="App">
-      <Hero />
-      <About />
-      <Work />
-      <Contact />
-      <Footer />
+      <Navigation />
+      <div className="appWrapper">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Footer />
+      </div>
     </Container>
   );
 }

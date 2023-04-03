@@ -39,7 +39,7 @@ const Logo = styled.img`
   height: 80px;
 `;
 
-const List = styled.ul`
+const LinksWrapper = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
@@ -49,14 +49,33 @@ const List = styled.ul`
   }
 `;
 
-const ListItem = styled.li`
+const LinkItem = styled.li`
+  height: 100%;
+  padding: 0 1.1em;
+  color: #222;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-top: 3px solid transparent;
   cursor: pointer;
+  transition: all 220ms ease-in-out;
+  &:hover {
+    border-top: 2px solid var(--tertiary-color);
+    color: var(--light-branding-color);
+  }
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: var(--branding-color);
+  font-size: inherit;
+`;
 const Button = styled.button`
   width: 100px;
   padding: 10px;
-  background-color: var(--background-color);
+  background-color: var(--branding-color);
   color: (var--background-color);
   border: none;
   border-radius: 5px;
@@ -70,16 +89,24 @@ const Icon = styled.img`
 export default function Navigation() {
   return (
     <div>
-      <NavBar className="fixed-top">
+      <NavBar>
         <NavigationContainer>
           <LeftSection>
             <Logo src="..//img/logo.png" />
-            <List>
-              <ListItem>Home</ListItem>
-              <ListItem>Studio</ListItem>
-              <ListItem>Work</ListItem>
-              <ListItem>Contact</ListItem>
-            </List>
+            <LinksWrapper>
+              <LinkItem>
+                <Link href="/">Home</Link>
+              </LinkItem>
+              <LinkItem>
+                <Link href="/about">About</Link>
+              </LinkItem>
+              <LinkItem>
+                <Link href="/portfolio">Portfolio</Link>
+              </LinkItem>
+              <LinkItem>
+                <Link href="/contact">Contact</Link>
+              </LinkItem>
+            </LinksWrapper>
           </LeftSection>
 
           <RightSection>

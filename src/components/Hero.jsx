@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Navigation } from "./Navigation";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, MeshDistortMaterial, Sphere } from "@react-three/drei";
 
 const Section = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   display; flex;
   flex-direction: column;
   align-items:center;
@@ -43,7 +41,7 @@ const Left = styled.div`
     flex: 1;
     align-items: center;
     padding-left: 0px;
-  }
+  }r
 `;
 
 const Title = styled.h1`
@@ -65,12 +63,12 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+  color: var(--tertiary-color);
 `;
 
 const Desc = styled.p`
   font-size: 24px;
-  color: lightgray;
+  color: var(--branding-color);
   @media only screen and (max-width: 768px) {
     padding: 20px;
     text-align: center;
@@ -123,7 +121,6 @@ const Img = styled.img`
 const Hero = () => {
   return (
     <Section>
-      <Navigation />
       <Container>
         <Left>
           <Title>Think. Make. Solve.</Title>
@@ -139,11 +136,11 @@ const Hero = () => {
         <Right>
           <Canvas>
             <OrbitControls enableZoom={false} />
-            <ambientLight intensity={1} />
+            w <ambientLight intensity={1} />
             <directionalLight position={[3, 2, 1]} />
             <Sphere args={[1, 100, 200]} scale={2}>
               <MeshDistortMaterial
-                color="#3d1c56"
+                color="#01352c"
                 attach="material"
                 distort={0.5}
                 speed={2}
