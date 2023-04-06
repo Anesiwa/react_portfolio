@@ -12,7 +12,6 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  height: 100vh;
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -60,23 +59,27 @@ const Line = styled.img`
 `;
 
 const Subtitle = styled.h2`
-  color: #da4ea2;
+  color: var(--tertiary-color);
 `;
 
 const Desc = styled.p`
   font-size: 24px;
-  color: (var--tertiary-color);
+  color: var(--branding-color);
 `;
 
 const Button = styled.button`
-  background-color: var(--background-color);
-  color: white;
-  font-weight: 500;
-  width: 120px;
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
+  font-weight: bold;
+  width: 100px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: var(--quad-color);
+    color: var(--light-branding-color);
+  }
 `;
 
 const About = () => {

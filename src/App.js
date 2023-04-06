@@ -1,7 +1,6 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import Footer from "./components/footer/footer.component";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./routes/home/home";
 import Navigation from "./routes/navigation/navigation.NEW";
@@ -16,7 +15,7 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   background: var(--background-color);
-  color: var(--branding-color);
+  color: var(--light-branding-color);
   &::-webkit-scrollbar {
     display: none;
   }
@@ -33,7 +32,6 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <Footer />
       </div>
     </Container>
   );

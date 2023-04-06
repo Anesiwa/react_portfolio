@@ -75,14 +75,18 @@ const Desc = styled.p`
   }
 `;
 const Button = styled.button`
-  background-color: (var--light-branding-color);
-  color: (var--branding-color);
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
   font-weight: 500;
   width: 100px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-branding-color);
+  }
 `;
 
 const Right = styled.div`

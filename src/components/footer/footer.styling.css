@@ -1,6 +1,6 @@
 .footerContainer a {
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--secondary-color);
   background: var(--branding-color);
   padding: 12px 12px;
   border-radius: 50%;
@@ -10,15 +10,15 @@
   margin: 0 10px;
 }
 .footerContainer p {
-  color: var(--branding-color);
+  color: var(--light-branding-color);
 }
 .footer-social-links {
   justify-content: space-between;
 }
 
 .footerContainer a:hover {
-  color: var(--background-color);
-  background: var(--tertiary-color);
+  color: var(--tertiary-color);
+  background: var(--branding-color);
   transition: all 100mx ease-in-out;
 }
 
@@ -38,7 +38,7 @@
   .footerContainer a {
     text-decoration: none;
     color: var(--branding-color);
-    background: var(--background-color);
+    background: var(--quad-color);
     padding: 12px 12px;
     border-radius: 50%;
     text-align: center;

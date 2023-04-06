@@ -2,11 +2,17 @@
   text-align: center;
 }
 :root {
-  --branding-color: #bad8b6;
-  --light-branding-color: #e1eacd;
-  --background-color: #01352c;
-  --font-color: var(--light-branding-color);
-  --tertiary-color: #61b390;
+  --branding-color: #101e5a;
+  --light-branding-color: #5d80b6;
+  --background-color: linear-gradient(
+    0deg,
+    rgba(203, 198, 195, 1) 30%,
+    rgba(16, 30, 90, 1) 70%
+  );
+  --font-color: var(--branding-color);
+  --secondary-color: #cbc6c3;
+  --tertiary-color: #acbdd3;
+  --quad-color: #f7f8f9;
 }
 .appWrapper {
   padding: 10px;
@@ -14,8 +20,8 @@
 
 .social-icons {
   text-decoration: none;
-  color: var(--background-color);
-  background: var(--branding-color);
+  color: var(--branding-color);
+  background: var(--light-branding-color);
   padding: 12px 12px;
   border-radius: 50%;
   text-align: center;
@@ -25,7 +31,7 @@
 }
 
 .social-icons a:hover {
-  color: var(--background-color);
+  color: var(--quad-color);
   background: var(--tertiary-color);
   transition: all 100mx ease-in-out;
 }

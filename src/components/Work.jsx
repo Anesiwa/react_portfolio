@@ -54,13 +54,13 @@ const ListItem = styled.li`
   font-size: 70px;
   font-weight: bold;
   cursor: pointer;
-  color: var(--background-color);
-  -webkit-text-stroke: 1px white;
+  color: var(--light-branding-color);
+  -webkit-text-stroke: 1px var(--light-branding-color);
   position: relative;
 
   @media only screen and (max-width: 768px) {
     font-size: 32px;
-    color: var(--branding-color);
+    color: var(--light-branding-color);
     -webkit-text-stroke: 0px;
   }
   ::after {

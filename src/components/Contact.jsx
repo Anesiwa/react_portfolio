@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import MapChart from "./Map";
 import emailjs from "@emailjs/browser";
+import Footer from ".//footer/footer.component";
 
 const Section = styled.div`
   height: 100vh;
@@ -13,6 +14,7 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
+  border: 2px 
   gap: 50px;
 `;
 
@@ -46,6 +48,10 @@ const Input = styled.input`
   background-color: var(--light-branding-color);
   border: none;
   border-radius: 5px;
+
+  ::placeholder {
+    color: var(--font-color);
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -53,6 +59,10 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   background-color: var(--light-branding-color);
+
+  ::placeholder {
+    color: var(--font-color);
+  }
 `;
 
 const Button = styled.button`
@@ -63,6 +73,11 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   padding: 20px;
+
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-branding-color);
+  }
 `;
 
 const Right = styled.div`
@@ -110,7 +125,7 @@ const Contact = () => {
             <TextArea
               placeholder="What dream can I help you build?"
               name="message"
-              rows={10}
+              rows={8}
             />
             <Button type="submit">Send</Button>
             {success && "Your message has been sent. I'll get back to you soon"}
@@ -120,6 +135,7 @@ const Contact = () => {
           <MapChart />
         </Right>
       </Container>
+      <Footer />
     </Section>
   );
 };

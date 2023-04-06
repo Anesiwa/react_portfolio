@@ -52,7 +52,7 @@ const LinksWrapper = styled.ul`
 const LinkItem = styled.li`
   height: 100%;
   padding: 0 1.1em;
-  color: #222;
+  color: var(--tertiary-color);
   font-weight: 500;
   font-size: 14px;
   align-items: center;
@@ -62,24 +62,29 @@ const LinkItem = styled.li`
   cursor: pointer;
   transition: all 220ms ease-in-out;
   &:hover {
-    border-top: 2px solid var(--tertiary-color);
+    border-top: 2px solid var(--secondary-color);
     color: var(--light-branding-color);
   }
 `;
 
 const Link = styled.a`
   text-decoration: none;
-  color: var(--branding-color);
+  color: var(--secondary-color);
   font-size: inherit;
 `;
 const Button = styled.button`
   width: 100px;
   padding: 10px;
-  background-color: var(--branding-color);
-  color: (var--background-color);
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
   border: none;
+  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: var(--secondary-color);
+    color: var(--light-branding-color);
+  }
 `;
 
 const Icon = styled.img`
@@ -89,7 +94,7 @@ const Icon = styled.img`
 export default function Navigation() {
   return (
     <div>
-      <NavBar>
+      <NavBar className="fixed-top">
         <NavigationContainer>
           <LeftSection>
             <Logo src="..//img/logo.png" />
