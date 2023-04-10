@@ -5,9 +5,9 @@ import styled from "styled-components";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
-  padding: 20px;
-  background-color: white;
+  height: 130px;
+  padding: 15px;
+  background-color: var(--quad-color);
   border-radius: 10px;
   position: absolute;
   bottom: 200px;

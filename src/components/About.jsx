@@ -38,6 +38,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   padding-right: 20px;
 

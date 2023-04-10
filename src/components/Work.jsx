@@ -4,13 +4,7 @@ import WebDesign from "./WebDesign";
 import ProductDesign from "./ProductDesign";
 import Development from "./Development";
 
-const data = [
-  "Web Design",
-  "Development",
-  "Illustration",
-  "Product Design",
-  "Social Media",
-];
+const data = ["Web Design", "Development", "Illustration", "Product Design"];
 
 const Section = styled.div`
   height: 100vh;
@@ -37,6 +31,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+
   @media only screen and (max-width: 768px) {
     padding: 20px;
     justify-content: center;
@@ -51,7 +46,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 70px;
+  font-size: 90px;
   font-weight: bold;
   cursor: pointer;
   color: var(--light-branding-color);
@@ -59,7 +54,7 @@ const ListItem = styled.li`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-    font-size: 32px;
+    font-size: 24px;
     color: var(--light-branding-color);
     -webkit-text-stroke: 0px;
   }
@@ -107,7 +102,6 @@ const Work = () => {
           </List>
         </Left>
         <Right>
-          {" "}
           {work === "Web Design" ? (
             <WebDesign />
           ) : work === "Development" ? (

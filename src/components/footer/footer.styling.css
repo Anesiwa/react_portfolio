@@ -17,8 +17,8 @@
 }
 
 .footerContainer a:hover {
-  color: var(--tertiary-color);
-  background: var(--branding-color);
+  color: var(--branding-color);
+  background: var(--light-branding-color);
   transition: all 100mx ease-in-out;
 }
 

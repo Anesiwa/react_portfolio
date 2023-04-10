@@ -31,7 +31,13 @@
 }
 
 .social-icons a:hover {
-  color: var(--quad-color);
-  background: var(--tertiary-color);
+  color: var(--light-branding-color);
+  background: var(--branding-color);
   transition: all 100mx ease-in-out;
+}
+.bottomContainer {
+  flex: 1;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
 }

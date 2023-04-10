@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./routes/home/home";
-import Navigation from "./routes/navigation/navigation.NEW";
 import AboutPage from "./routes/about/about-page";
 import ContactPage from "./routes/contact/contact-page";
 import Portfolio from "./routes/portfolio/portfolio";
@@ -24,7 +23,6 @@ const Container = styled.div`
 export default function App() {
   return (
     <Container className="App">
-      <Navigation />
       <div className="appWrapper">
         <Routes>
           <Route path="/" element={<Home />} />

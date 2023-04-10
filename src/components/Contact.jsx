@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import Footer from ".//footer/footer.component";
 
 const Section = styled.div`
-  height: 100vh;
+  height: 85vh;
   scroll-snap-align: center;
 `;
 
@@ -14,7 +14,7 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
-  border: 2px 
+  border: 2px;
   gap: 50px;
 `;
 
@@ -38,6 +38,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 25px;
+
   @media only screen and (max-width: 768px) {
     width: 300px;
   }

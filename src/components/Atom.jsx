@@ -3,7 +3,6 @@ import { Line, Sphere } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
 
-// You can draw the shape in this way if do not want to import a ready-to-use 3D model.
 const Shape = () => {
   const points = useMemo(
     () =>

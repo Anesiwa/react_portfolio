@@ -4,6 +4,15 @@ export default function SocialMediaLinks() {
   return (
     <div className="footer-social-links">
       <a
+        className="footer-social-icons"
+        href="https://github.com/Anesiwa/Portfolio-Project_Preliminary"
+        target="_blank"
+        rel="noreferrer"
+        title="Github logo"
+      >
+        <i className="fab fa-github"></i>
+      </a>
+      <a
         href="mailto:lwvibed@gmail.com"
         title="Email Amelia Arku"
         className="footer-social-icons"

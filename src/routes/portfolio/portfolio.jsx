@@ -1,10 +1,24 @@
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
+import Footer from "../../components/footer/footer.component";
+import Navigation from "../navigation/navigation.NEW";
+import styled from "styled-components";
+
+const Section = styled.div`
+  height: 90vh;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+`;
 
 export default function Portfolio() {
   return (
     <div>
-      Hello from Portfolioooooooo
+      <Navigation />
+
       <div classname="row">
         <div className="col-4">column1 </div>
         <div className="col-4">column1 </div>
@@ -53,6 +67,7 @@ export default function Portfolio() {
           </Card.Footer>
         </Card>
       </CardGroup>
+      <Footer />
     </div>
   );
 }

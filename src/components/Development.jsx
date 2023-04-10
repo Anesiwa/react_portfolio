@@ -6,13 +6,14 @@ import styled from "styled-components";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
-  padding: 20px;
-  background-color: white;
+  height: 130px;
+  padding: 15px;
+  background-color: var(--quad-color);
   border-radius: 10px;
   position: absolute;
   top: 200px;
   right: 100px;
+
   @media only screen and (max-width: 768px) {
     top: 0;
     bottom: 0;
@@ -32,7 +33,7 @@ const Development = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
+        I design products with a strong focus on both world class design and
         ensuring your product is a market success.
       </Desc>
     </>
