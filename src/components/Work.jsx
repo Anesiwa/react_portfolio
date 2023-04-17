@@ -14,6 +14,11 @@ const Section = styled.div`
   position: relative;
   font-size: 14px;
   font-weight: 300;
+
+  @media only screen and (max-width: 768px) {
+    height: 200vh;
+    scroll-snap-align: start;
+  }
 `;
 
 const Container = styled.div`
@@ -46,7 +51,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 90px;
+  font-size: 75px;
   font-weight: bold;
   cursor: pointer;
   color: var(--light-branding-color);
@@ -54,7 +59,7 @@ const ListItem = styled.li`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 36px;
     color: var(--light-branding-color);
     -webkit-text-stroke: 0px;
   }

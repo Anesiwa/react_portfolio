@@ -38,6 +38,7 @@
 .bottomContainer {
   flex: 1;
   justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 0;
 }

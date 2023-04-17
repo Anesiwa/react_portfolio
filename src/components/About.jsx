@@ -45,7 +45,7 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
-    padding-right: 0px;
+
   }
 `;
 

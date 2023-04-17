@@ -5,8 +5,14 @@ import emailjs from "@emailjs/browser";
 import Footer from ".//footer/footer.component";
 
 const Section = styled.div`
-  height: 85vh;
+  height: 100vh;
   scroll-snap-align: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 90vh;
+    scroll-snap-align: start;
+    padding-top: 60px;
+  }
 `;
 
 const Container = styled.div`

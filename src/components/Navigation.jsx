@@ -56,8 +56,9 @@ const ListItem = styled.li`
 const Button = styled.button`
   width: 100px;
   padding: 10px;
-  background-color: var(--background-color);
-  color: (var--background-color);
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
+  font-weight: 500;
   border: none;
   border-radius: 5px;
   cursor: pointer;

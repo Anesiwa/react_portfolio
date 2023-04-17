@@ -1,72 +1,54 @@
-import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
 import Footer from "../../components/footer/footer.component";
 import Navigation from "../navigation/navigation.NEW";
 import styled from "styled-components";
+import Gallery from "./gallery/gallery";
 
 const Section = styled.div`
-  height: 90vh;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
-  position: relative;
   font-size: 14px;
   font-weight: 300;
+  margin: 100px 0;
+
+    @media only screen and (max-width: 768px) {
+    scroll-snap-align: start;
+   padding-top: 60px;
+ `;
+
+const List = styled.ul`
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0px;
+  justify-content: space-around;
+
+  @media only screen and (max-width: 768px) {
+    gap: 10px;
+  }
+`;
+
+const ListItem = styled.li`
+  cursor: pointer;
+  font-weight: 500;
+  align-items: center;
 `;
 
 export default function Portfolio() {
   return (
     <div>
       <Navigation />
-
-      <div classname="row">
-        <div className="col-4">column1 </div>
-        <div className="col-4">column1 </div>
-        <div className="col-4">column1 </div>
-      </div>
-      <CardGroup>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{" "}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+      <Section>
+        <div className="filter-wrap animated fade-in" data-animation="fade-in">
+          <List className="row">
+            <ListItem className="filter">ALL </ListItem>
+            <ListItem className="filter">REACT-JS</ListItem>
+            <ListItem className="filter">HTML/CSS</ListItem>
+            <ListItem className="filter">JAVASCRIPT</ListItem>
+            <ListItem className="filter">TYPESCRIPT</ListItem>
+          </List>
+          <Gallery />
+        </div>
+      </Section>
       <Footer />
     </div>
   );
