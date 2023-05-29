@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../../components/footer/footer.component";
 import Navigation from "../navigation/navigation.NEW";
 import styled from "styled-components";
@@ -19,7 +20,6 @@ const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
-  padding: 0px;
   justify-content: space-around;
 
   @media only screen and (max-width: 768px) {
@@ -29,8 +29,11 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   cursor: pointer;
+  transition: all 220ms ease-in-out;
   font-weight: 500;
   align-items: center;
+  justify-content: center;
+  display: inline-flex;
 `;
 
 export default function Portfolio() {
@@ -38,8 +41,8 @@ export default function Portfolio() {
     <div>
       <Navigation />
       <Section>
-        <div className="filter-wrap animated fade-in" data-animation="fade-in">
-          <List className="row">
+        <div>
+          <List className="row d-flex">
             <ListItem className="filter">ALL </ListItem>
             <ListItem className="filter">REACT-JS</ListItem>
             <ListItem className="filter">HTML/CSS</ListItem>

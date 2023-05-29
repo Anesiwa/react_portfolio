@@ -137,12 +137,14 @@ const Hero = () => {
           <Title>Think. Make. Solve.</Title>
           <WhatIDo>
             <Line src="./img/line.png" />
-            <Subtitle>What I Do</Subtitle>
+            <Subtitle>Who I am</Subtitle>
           </WhatIDo>
           <Desc>
             I enjoy creating delightful, human-centered digital experiences.
           </Desc>
-          <Button>Learn More</Button>
+          <Button>
+            <a href="/about">Learn More</a>
+          </Button>
         </Left>
         <Right>
           <Canvas>

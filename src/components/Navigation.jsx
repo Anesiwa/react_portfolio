@@ -74,7 +74,9 @@ export default function Navigation() {
       <NavBar className="fixed-top">
         <NavigationContainer>
           <LeftSection>
-            <Logo src="..//img/logo.png" />
+            <a href="/about">
+              <Logo src="..//img/logo.png" />
+            </a>
             <List>
               <ListItem>Home</ListItem>
               <ListItem>Studio</ListItem>

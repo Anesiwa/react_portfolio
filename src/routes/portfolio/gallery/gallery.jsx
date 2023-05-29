@@ -31,18 +31,20 @@ const Details = styled.div`
   text-align: center;
   margin-top: 2px;
   justify-content: center;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  } ;
 `;
 const Title = styled.h2`
   color: var(--light-branding-color);
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Desc = styled.p`
   color: var(--branding-color);
   font-weight: 600;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Gallery = () => {

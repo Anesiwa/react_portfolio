@@ -44,7 +44,9 @@
     transition: transform 0.25s ease-out;
     justify-content: space-around;
   }
-
+  .card-container:hover {
+    transform: scale(1.05);
+  }
   .card-list {
     margin: 0 auto;
     display: grid;

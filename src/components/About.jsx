@@ -45,7 +45,6 @@ const Right = styled.div`
   @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
-
   }
 `;
 
@@ -107,7 +106,10 @@ const About = () => {
             a creative group of designers and developers with a passion for the
             arts.
           </Desc>
-          <Button>See my Work</Button>
+          <Button>
+            {" "}
+            <a href="/portfolio">See my Work</a>
+          </Button>
         </Right>
       </Container>
     </Section>
